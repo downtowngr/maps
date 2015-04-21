@@ -16,8 +16,6 @@ Repository of map data used by Downtown Grand Rapids Inc.'s website, [Pearl](htt
 - `parking_meters.geojson` - Parking meter blocks and prices. Adapted from [Parking Services data](http://grcity.us/enterprise-services/Parking-Services/Pages/Parking-Meter-Map.aspx).
 - `transit_stops.geojson` - All bus stops, their numbers, names, and routes within Downtown. Adapted from [The Rapid's GTFS feed](http://data.grcity.us/dataset/gtfs).
 
-Includes shapefiles used to produce `lots_and_entrances.geojson`. Data collected by DGRI.
-
 ## Bounding Box
 
 Bounding box for Downtown points should be within a polygon from the intersection of 6th St NW and Seward Ave NW on the northwestern edge (`42.97696419731116, -85.68291485309601`) to the intersection of College Ave SE and Logan St SE on the southeastern edge (`42.95390977598836, -85.65665602684021`).
