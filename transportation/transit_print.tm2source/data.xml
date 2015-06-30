@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="center">-85.6793,42.9663,15</Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"bike_parking","description":"Bike Parking","fields":{"type":"Type of Bike Parking","capacity":"Capacity of Parking"}},{"id":"dash_routes","description":"Dash Routes","fields":{"stroke-width":"Number","stroke-opacity":"Number","service":"String","title":"String","stroke":"String"}},{"id":"parking_meters","description":"Parking Meters","fields":{"cost_per_hour":"Number","enforcement_day_range":"String","enforcement_time_range":"String","restricted_time_range":"String"}},{"id":"transit_stops","description":"Transit Stops","fields":{"stop_number":"Number","name":"String"}},{"id":"car_parking","description":"Car parking lots","fields":{"name":"String","spots":"String","managed_by":"String","monthly":"String","half_hour":"String","daily_max":"String","per_entry":"String","event_rate":"String","evening":"String","vip":"String","valet":"String","early_bird":"String","event_only":"String","notes":"String"}}]}]]></Parameter>
+  <Parameter name="maxzoom">16</Parameter>
+  <Parameter name="minzoom">12</Parameter>
+  <Parameter name="name"><![CDATA[DGRI Transit Source]]></Parameter>
+</Parameters>
+
+
+<Layer name="bike_parking"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/pichot/DGRI/code/maps/transportation/bike_parking.geojson]]></Parameter>
+       <Parameter name="layer"><![CDATA[OGRGeoJSON]]></Parameter>
+       <Parameter name="type"><![CDATA[ogr]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="dash_routes"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/pichot/DGRI/code/maps/transportation/dash_routes.geojson]]></Parameter>
+       <Parameter name="layer"><![CDATA[OGRGeoJSON]]></Parameter>
+       <Parameter name="type"><![CDATA[ogr]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="parking_meters"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/pichot/DGRI/code/maps/transportation/parking_meters.geojson]]></Parameter>
+       <Parameter name="layer"><![CDATA[OGRGeoJSON]]></Parameter>
+       <Parameter name="type"><![CDATA[ogr]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="transit_stops"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/pichot/DGRI/code/maps/transportation/transit_stops.geojson]]></Parameter>
+       <Parameter name="layer"><![CDATA[OGRGeoJSON]]></Parameter>
+       <Parameter name="type"><![CDATA[ogr]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="car_parking"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/pichot/DGRI/code/maps/transportation/car_parking.geojson]]></Parameter>
+       <Parameter name="layer"><![CDATA[OGRGeoJSON]]></Parameter>
+       <Parameter name="type"><![CDATA[ogr]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

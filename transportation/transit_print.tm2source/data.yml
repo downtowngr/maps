@@ -1,0 +1,93 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: dgri.b287a124
+  rev: s-f4f8d434
+  saveCenter: true
+attribution: ''
+center: 
+  - -85.6793
+  - 42.9663
+  - 15
+description: ''
+Layer: 
+  - id: bike_parking
+    Datasource: 
+      file: /Users/pichot/DGRI/code/maps/transportation/bike_parking.geojson
+      layer: OGRGeoJSON
+      type: ogr
+    description: Bike Parking
+    fields: 
+      capacity: Capacity of Parking
+      type: Type of Bike Parking
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: dash_routes
+    Datasource: 
+      file: /Users/pichot/DGRI/code/maps/transportation/dash_routes.geojson
+      layer: OGRGeoJSON
+      type: ogr
+    description: Dash Routes
+    fields: 
+      service: String
+      stroke: String
+      "stroke-opacity": Number
+      "stroke-width": Number
+      title: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: parking_meters
+    Datasource: 
+      file: /Users/pichot/DGRI/code/maps/transportation/parking_meters.geojson
+      layer: OGRGeoJSON
+      type: ogr
+    description: Parking Meters
+    fields: 
+      cost_per_hour: Number
+      enforcement_day_range: String
+      enforcement_time_range: String
+      restricted_time_range: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: transit_stops
+    Datasource: 
+      file: /Users/pichot/DGRI/code/maps/transportation/transit_stops.geojson
+      layer: OGRGeoJSON
+      type: ogr
+    description: Transit Stops
+    fields: 
+      name: String
+      stop_number: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: car_parking
+    Datasource: 
+      file: /Users/pichot/DGRI/code/maps/transportation/car_parking.geojson
+      layer: OGRGeoJSON
+      type: ogr
+    description: Car parking lots
+    fields: 
+      daily_max: String
+      early_bird: String
+      evening: String
+      event_only: String
+      event_rate: String
+      half_hour: String
+      managed_by: String
+      monthly: String
+      name: String
+      notes: String
+      per_entry: String
+      spots: String
+      valet: String
+      vip: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 16
+minzoom: 12
+name: DGRI Transit Source

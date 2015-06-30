@@ -12,10 +12,12 @@ Repository of map data used by Downtown Grand Rapids Inc.'s website, [Pearl](htt
 ## Transportation
 
 - `bike_parking.geojson` - Bike Parking within Downtown collected through OpenStreetMap.
-- `lots_and_entrances.geojson` - All public and private parking lots and ramps within Downtown, including entrance points.
+- `car_parking.geojson` - All public and private parking lots and ramps within Downtown.
+- `car_parking_entrances.geojson` – Entry and exit points for all ramps Downtown. To be layered on top of `car_parking.geojson`.
 - `parking_meters.geojson` - Parking meter blocks and prices. Adapted from [Parking Services data](http://grcity.us/enterprise-services/Parking-Services/Pages/Parking-Meter-Map.aspx).
 - `transit_stops.geojson` - All bus stops, their numbers, names, and routes within Downtown. Adapted from [The Rapid's GTFS feed](http://data.grcity.us/dataset/gtfs).
 - `dash_routes.geojson` - DASH routes in Downtown.
+- `transit_print.tm2source` – [Mapbox Studio](https://www.mapbox.com/mapbox-studio) Source project of transit layers for print maps of Downtown Grand Rapids.
 
 ## Bounding Box
 
